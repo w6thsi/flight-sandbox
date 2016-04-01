@@ -1,5 +1,5 @@
 {
-  "name": "sassapp",
+  "name": "flight-sandbox",
   "version": "0.0.0",
   "dependencies": {
     "bootstrap-sass": "~3.3.6",
