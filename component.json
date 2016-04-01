@@ -1,0 +1,14 @@
+{
+  "name": "sassapp",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap-sass": "~3.3.6",
+    "flight": "~1.5.1",
+    "jquery": "~3.0.0-beta1"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}
