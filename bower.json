@@ -4,7 +4,8 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.6",
     "flight": "~1.5.1",
-    "jquery": "~3.0.0-beta1"
+    "jquery": "~3.0.0-beta1",
+    "requirejs": "^2.2.0"
   },
   "ignore": [
     "**/.*",
