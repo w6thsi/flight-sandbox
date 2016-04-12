@@ -4,7 +4,7 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 
 gulp.task('sass', function () {
-  return gulp.src('./assets/sass/main.scss')
+  return gulp.src('./client/sass/main.scss')
     .pipe($.sass().on('error', $.sass.logError))
     .pipe(gulp.dest('./public/stylesheets'));
 });
@@ -18,19 +18,19 @@ gulp.task('vendor-js', function () {
 });
 
 gulp.task('js', ['vendor-js'], function () {
-  return gulp.src(['./assets/js/**/*.js'], { base: './assets/js' })
+  return gulp.src(['./src/client/js/**/*.js'], { base: './src/client/js' })
         .pipe(gulp.dest('./public/js'));
 });
 
 gulp.task('fonts', function () {
-  return gulp.src('./components/bootstrap-sass/assets/fonts/bootstrap/*')
+  return gulp.src('./components/bootstrap-sass/client/fonts/bootstrap/*')
     .pipe(gulp.dest('./public/fonts/bootstrap'));
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./assets/sass/**/*.scss', ['sass']);
+  gulp.watch('./client/sass/**/*.scss', ['sass']);
 });
 
 gulp.task('js:watch', function () {
-  gulp.watch('./assets/js/**/*.js', ['js']);
+  gulp.watch('./client/js/**/*.js', ['js']);
 });

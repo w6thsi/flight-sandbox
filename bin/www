@@ -4,8 +4,8 @@
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('sassapp:server');
+var app = require('../src/server/index');
+var debug = require('debug')('flight-sandbox:server');
 var http = require('http');
 
 /**
