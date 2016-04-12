@@ -36,9 +36,10 @@ gulp.task('js:watch', function () {
     gulp.watch('./client/js/**/*.js', ['js']);
 });
 
-gulp.task('clean', function (done) {
-    del(['./public/fonts/*', './public/js/*', './public/stylesheets/*'])
-        .then(function () {
-            done();
-        });
+gulp.task('clean:all', function () {
+    return del(['./public/fonts/*', './public/js/*', './public/stylesheets/*']);
+});
+
+gulp.task('clean:js', function () {
+    return del(['./public/js/*']);
 });
